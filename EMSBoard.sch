@@ -6858,6 +6858,7 @@ Source:
 <part name="R4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="100"/>
 <part name="GND1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="GND3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -6889,6 +6890,9 @@ Source:
 </instance>
 <instance part="GND2" gate="1" x="-7.62" y="30.48" smashed="yes">
 <attribute name="VALUE" x="-10.16" y="27.94" size="1.778" layer="96"/>
+</instance>
+<instance part="GND3" gate="1" x="35.56" y="73.66" smashed="yes">
+<attribute name="VALUE" x="33.02" y="71.12" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -6932,6 +6936,16 @@ Source:
 <pinref part="GND2" gate="1" pin="GND"/>
 <wire x1="2.54" y1="35.56" x2="-7.62" y2="35.56" width="0.1524" layer="91"/>
 <wire x1="-7.62" y1="35.56" x2="-7.62" y2="33.02" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="IC2" gate="G$1" pin="G$1"/>
+<pinref part="GND3" gate="1" pin="GND"/>
+<wire x1="27.94" y1="81.28" x2="35.56" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="81.28" x2="35.56" y2="78.74" width="0.1524" layer="91"/>
+<pinref part="IC2" gate="G$1" pin="G$0"/>
+<wire x1="35.56" y1="78.74" x2="35.56" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="78.74" x2="35.56" y2="78.74" width="0.1524" layer="91"/>
+<junction x="35.56" y="78.74"/>
 </segment>
 </net>
 </nets>
