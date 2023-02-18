@@ -82,6 +82,7 @@
 <wire x1="0" y1="25.4" x2="55.88" y2="25.4" width="0.1524" layer="20"/>
 <wire x1="55.88" y1="25.4" x2="55.88" y2="0" width="0.1524" layer="20"/>
 <wire x1="55.88" y1="0" x2="0" y2="0" width="0.1524" layer="20"/>
+<text x="6.35" y="15.24" size="1.778" layer="21">EMSBoard ver 1.0</text>
 </plain>
 <libraries>
 <library name="led" urn="urn:adsk.eagle:library:259">
